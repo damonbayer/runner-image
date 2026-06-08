@@ -205,9 +205,7 @@ RUN : \
 
 ARG JULIA=1.12.6
 ARG JULIA_SHA256=bbabf3bef19421a9dbd24a767d807606ab85e444323b5a1c73ffe293fa3d079a
-ENV \
-    PATH=/opt/julia/bin:$PATH \
-    JULIA_DEPOT_PATH=/pc/julia_depot
+ENV PATH=/opt/julia/bin:$PATH
 RUN : \
     && echo 'lang: julia' \
     && julia_minor="${JULIA%.*}" \
